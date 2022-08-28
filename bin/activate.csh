@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/austinhoward/code/python-graphql/myapp"
+setenv VIRTUAL_ENV "/Users/austinhoward/code/python-graphql/flask-graphql-api"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
@@ -17,8 +17,8 @@ setenv PATH "$VIRTUAL_ENV/bin:$PATH"
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
-    set prompt = "(myapp) $prompt"
-    setenv VIRTUAL_ENV_PROMPT "(myapp) "
+    set prompt = "(flask-graphql-api) $prompt"
+    setenv VIRTUAL_ENV_PROMPT "(flask-graphql-api) "
 endif
 
 alias pydoc python -m pydoc
