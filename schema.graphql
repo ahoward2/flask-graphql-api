@@ -1,18 +1,26 @@
 schema {
-	query: Query
+  query: Query
 }
 
-type Name {
-	first_name: String!
-	last_name: String!
+type User {
+  id: String!
+  first_name: String!
+  last_name: String!
 }
 
-type NameResult {
-	success: Boolean!
-	errors: [String]
-	name: Name
+type UserResult {
+  success: Boolean!
+  errors: [String]
+  user: User
+}
+
+type UsersResult {
+  success: Boolean!
+  errors: [String]
+  users: [User]
 }
 
 type Query {
-	getName: NameResult!
+  getUser(id: String): UserResult!
+  getUsers: UsersResult!
 }
