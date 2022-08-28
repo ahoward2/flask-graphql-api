@@ -1,0 +1,18 @@
+schema {
+	query: Query
+}
+
+type Name {
+	first_name: String!
+	last_name: String!
+}
+
+type NameResult {
+	success: Boolean!
+	errors: [String]
+	name: Name
+}
+
+type Query {
+	getName: NameResult!
+}
