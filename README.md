@@ -8,8 +8,8 @@ See [requirements.txt](./requirements.txt) for list of packages.
 
 Primary ones are:
 
-- Ariadne
-- Flask
+- [Ariadne](https://ariadnegraphql.org/)
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 
 ## Run It
 

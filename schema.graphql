@@ -1,11 +1,18 @@
 schema {
   query: Query
+	mutation: Mutation
 }
 
 type User {
   id: String!
   first_name: String!
   last_name: String!
+}
+
+input UserInput {
+	id: String!
+	first_name: String!
+	last_name: String!
 }
 
 type UserResult {
@@ -20,7 +27,16 @@ type UsersResult {
   users: [User]
 }
 
+type AddUserResult {
+  success: Boolean!
+  errors: [String]
+}
+
 type Query {
   getUser(id: String): UserResult!
   getUsers: UsersResult!
+}
+
+type Mutation {
+  addUser(user: UserInput): AddUserResult
 }

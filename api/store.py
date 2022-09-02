@@ -2,7 +2,7 @@ class Store:
 	def __init__(self, initial_users):
 		self.users = initial_users
 
-	def add_user(user):
+	def add_user(self, user):
 		self.users.append(user)
 	
 	def print_store(self):

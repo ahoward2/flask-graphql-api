@@ -27,3 +27,16 @@ def getUser_resolver(obj, info, id):
 			"errors": [str(error)]
 		}
 	return payload
+
+def addUser_resolver(_, info, user):
+	try:
+		store.add_user(user)
+		payload = {
+			"success": True
+		}
+	except Exception as error:
+		payload = {
+			"success": False,
+			"errors": [str(error)]
+		}
+	return payload
