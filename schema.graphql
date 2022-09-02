@@ -1,12 +1,12 @@
 schema {
-  query: Query
-	mutation: Mutation
+    query: Query
+    mutation: Mutation
 }
 
 type User {
-  id: String!
-  first_name: String!
-  last_name: String!
+    id: String!
+    first_name: String!
+    last_name: String!
 }
 
 input UserInput {
@@ -16,27 +16,27 @@ input UserInput {
 }
 
 type UserResult {
-  success: Boolean!
-  errors: [String]
-  user: User
+    success: Boolean!
+    errors: [String]
+    user: User
 }
 
 type UsersResult {
-  success: Boolean!
-  errors: [String]
-  users: [User]
+    success: Boolean!
+    errors: [String]
+    users: [User]
 }
 
 type AddUserResult {
-  success: Boolean!
-  errors: [String]
+    success: Boolean!
+    errors: [String]
 }
 
 type Query {
-  getUser(id: String): UserResult!
-  getUsers: UsersResult!
+    getUser(id: String): UserResult!
+    getUsers: UsersResult!
 }
 
 type Mutation {
-  addUser(user: UserInput): AddUserResult
+    addUser(user: UserInput): AddUserResult
 }
